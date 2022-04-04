@@ -1,0 +1,9 @@
+h1{
+  color: rgb(255, 2, 2);
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-transform: capitalize;
+}
