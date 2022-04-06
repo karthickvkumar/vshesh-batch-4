@@ -40,6 +40,63 @@
 }
 
 .border{
-  border-style: solid;
+  /* border-style: solid;
   border-width: 3px;
+  border-color: red; */
+  border: 3px solid red;
+  padding-top: 15px;
+  padding-left: 35px;
+  padding-bottom: 15px;
+}
+
+.border-side{
+  border-top-style: double;
+  border-bottom-style: solid;
+  border-left-style: dotted;
+  border-right-style: dashed;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+
+.font{
+  font-size: 25px;
+  font-family: 'Beau Rivage', cursive;
+}
+
+.overflow-container{
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  border: 2px solid black;
+}
+
+.box{
+  width: 50%;
+  height: 50%;
+  margin-left: 25px;
+  border: 2px solid blue;
+}
+
+.visible{
+  overflow: visible;
+}
+
+.hidden{
+  overflow: hidden;
+}
+
+.scroll{
+  overflow: scroll;
+}
+
+.auto{
+  overflow: auto;
+}
+
+#heading{
+  color:blue
+}
+
+.background{
+  background-color: pink;
 }
