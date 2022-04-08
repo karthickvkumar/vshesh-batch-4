@@ -118,3 +118,22 @@ th{
 td{
   border: 1px solid black;
 }
+
+.container{
+  height: 50vh;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item{
+  height: 200px;
+  width: 200px;
+  border: 2px solid blue;
+}
+
+.align-item{
+  align-self: flex-start;
+}
