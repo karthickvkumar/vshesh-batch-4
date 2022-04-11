@@ -30,6 +30,9 @@
   height: 35%;
   margin-left: 15px;
   margin-right: 15px;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .title-image{
@@ -67,4 +70,9 @@
 .heading-date{
   border: 2px solid;
   width: 15%;
+}
+
+.image-box{
+  border: 2px solid;
+    width: 30%;
 }
