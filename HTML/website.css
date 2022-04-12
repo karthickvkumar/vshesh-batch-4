@@ -7,7 +7,7 @@
 }
 
 .column-one{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 35%;
   margin-top: 30px;
   margin-left: 15px;
@@ -17,7 +17,7 @@
 }
 
 .column-two{
-  border: 2px solid red;
+  /* border: 2px solid red; */
     height: 20%;
     margin-left: 15px;
     margin-top: 10px;
@@ -26,7 +26,7 @@
 }
 
 .colum-three{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 35%;
   margin-left: 15px;
   margin-right: 15px;
@@ -36,43 +36,80 @@
 }
 
 .title-image{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 25%;
 }
 
 .title-content{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 75%;
+  margin-left: 25px;
 }
 
 .heading{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 36%;
   display: flex;
   flex-direction: row;
 }
 
 .heading-content{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   height: 60%;
 }
 
 .image-thumb{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 10%;
 }
 
 .heading-text{
-  border: 2px solid;
+  /* border: 2px solid; */
   width: 75%;
 }
 
 .heading-date{
-  border: 2px solid;
+  /* border: 2px solid; */
   width: 15%;
 }
 
 .image-box{
-  border: 2px solid;
+  /* border: 2px solid; */
     width: 30%;
+}
+
+.item-image{
+  /* border: 2px solid red; */
+  height: 60%;
+}
+
+.item-heading{
+  /* border: 2px solid red; */
+  height: 20%;
+}
+
+.item-subheading{
+  /* border: 2px solid red; */
+  height: 16%;
+}
+
+.title-image-size{
+  width: 100%;
+  height: 100%;
+}
+
+.thumb-image-size{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+.font{
+  font-size: 18px;
+  color: #4e4e4e;
+  font-weight: bold;
+}
+
+.font-size{
+  font-size: 22px;
 }
