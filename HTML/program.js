@@ -12,3 +12,11 @@ console.log(age);
 
 var email_id = "karthick@gmail.com";
 console.log(email_id);
+
+// Boolean -> Either true or false
+
+var result_status = true;
+console.log(result_status); 
+
+var future_value;
+console.log(future_value)
