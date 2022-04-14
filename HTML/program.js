@@ -63,3 +63,37 @@ studentDetails.location = "Mumbai";
 delete studentDetails.location;
 
 console.log(studentDetails);
+
+// Array -> It is a collection of List data (List of Data)
+
+// Syntax of creating an Array
+
+// var variable_name = [ value_1, value_2, ... , Value_n ];
+// value -> Number, String, Boolean, Object, Array, Function
+
+var list_of_mark = [70, 85, 57, 78, 35];
+
+var name_list = ["Karthick", "Ajay", "sdfsdfsd", "sdfsdf"];
+
+var studentList = [
+  { name : "Karthick", age : 24},
+  { name : "Ak", age : 20},
+  { name : "Yuvi", age : 25}
+];
+
+
+// Operation in Array -> 4 Operation = Insert a new value, Read the Value, Edit the exiting value, Delete the value
+
+// Insert a new value into Array
+
+// push() -> Insert a new value at the end of array record
+// array_variable_name.push(value_1, value_2, ... , value_n);
+
+studentList.push({name: "Kumar", age: 28}, {name: "YK", age: 27});
+
+// unshift() -> Insert a new value at the start of array record
+// array_variable_name.unshift(value_1, value_2, ... , value_n);
+
+studentList.unshift({name : "Zyan", age : 29});
+
+console.log(studentList);
