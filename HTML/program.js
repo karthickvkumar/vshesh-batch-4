@@ -90,10 +90,58 @@ var studentList = [
 // array_variable_name.push(value_1, value_2, ... , value_n);
 
 studentList.push({name: "Kumar", age: 28}, {name: "YK", age: 27});
-
+  
 // unshift() -> Insert a new value at the start of array record
 // array_variable_name.unshift(value_1, value_2, ... , value_n);
 
 studentList.unshift({name : "Zyan", age : 29});
 
+
+// To Read value from Array
+// array_variable_name[index]
+
+console.log(studentList[2].name);
+
+// To edit a existing value from Array
+// array_variable_name[index] = value;
+
+studentList[4].name = "Dinesh";
+
+// To delete an value
+// array_variable_name.splice(index, deleteCount);
+
+studentList.splice(2, 1);
 console.log(studentList);
+
+// Function -> Block of Code 
+
+// function function_name(){
+    // code 
+// }
+
+function onLogin(){
+  var result = "You have loggin to the application";
+  console.log(result);
+}
+
+// Operators
+// 1. Arithmetic Operator -> +, -, *, /, %, ++, --
+// 2. Assignment Operator -> =
+// 3. Comparision Operator -> <, <=, >, >=, ==, ===, !=, !== 
+// 4. Logical Operator -> &&, ||, !
+
+// && - AND
+// true && true -> true
+// true && false -> false
+// false && true -> false
+// false && false -> false
+
+// || - OR
+// true || true -> true
+// false || true -> true
+// true || false -> true
+// false || false -> false
+
+// ! - NOT
+// ! true -> false
+// ! false -> true
