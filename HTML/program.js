@@ -145,3 +145,30 @@ function onLogin(){
 // ! - NOT
 // ! true -> false
 // ! false -> true
+
+//Syntax - if else conditon
+/*
+  if(conditon) {
+    // code block will execute if the condition is Truthy.
+  }
+  else{
+    // code block will execute if the condition is Falsy.
+  }
+*/
+
+/*
+Problem Statement
+1. We need to provide age(Number - Data type) as input for a program 
+2. If the given age is greater than or equal to 18 -> Output - The user is eligible for Vote
+3. If the given age is less then 18 -> Output - The user is not eligible for vote
+*/
+
+function check_voting_status(){
+  var age = prompt("Enter your age in number");
+  if(age >= 18){
+    console.log("The user is eligible for Vote");
+  }
+  else{
+    console.log("The user is not eligible for vote");
+  }
+}
