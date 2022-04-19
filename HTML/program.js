@@ -211,3 +211,24 @@ for(initialization;  condition; increment/decrement){
   //code block
 }
 */
+
+for(var count = 1; count <= 10; count++){
+  console.log("Loop is running on count ", count);
+}
+
+/*
+Find even number for given N number of limit.
+Solution: 
+1. Get number (Nth number limit) value from user while running the code.
+2. Logic for finding even number -> Number % 2 => 0
+3. Repeat this logic till n number
+*/
+
+function check_even_number(){
+  var last_number = prompt("Enter the last number");
+  for(var count = 1; count <= last_number; count++){
+    if(count % 2 == 0){
+      console.log(count, "is a Even number")
+    }
+  }
+}
