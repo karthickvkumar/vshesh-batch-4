@@ -232,3 +232,15 @@ function check_even_number(){
     }
   }
 }
+
+/*
+Syntax - for in (loop) - Used to iterate Object properties
+for(var key in object_variable_name){
+ // coding
+}
+*/
+
+for(var key in studentDetails){
+  console.log("The key of object", key);
+  console.log("The value of object", studentDetails[key])
+ }
