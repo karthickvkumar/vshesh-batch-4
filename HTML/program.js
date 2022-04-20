@@ -313,3 +313,23 @@ function find_weekday(){
       console.log("Number is out of range")
   }
 }
+
+// Local Scope -> If a variable is defined inside the function definition.
+// Global Scope -> If a variable is defined outside the function definition.
+
+// Automatic Global Scope -> If a variable is declared outside but the value is defined inside a function.
+var textMessage = "Printing this from Outside function";
+
+function displayMessage(){
+  var message = "Hello Everyone";
+  future_value = "Lunch Break!"
+  console.log(message);
+  console.log(textMessage);
+  console.log(future_value);
+}
+
+function printMessage(){
+  console.log(future_value);
+  console.log(textMessage);
+  console.log(message);
+}
