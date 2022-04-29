@@ -3,15 +3,15 @@ import React from "react";
 const LoginForm = () => {
   return(
     <div>
-      <div>
-        <label>Enter your username :</label>
-        <input type="text" placeholder="Enter username" />
+      <div className="space">
+        <label className="lableText">Enter your username :</label>
+        <input type="text" placeholder="Enter username" className="inputbox" />
       </div>
-      <div>
-        <label>Enter your Password :</label>
-        <input type="password" placeholder="Enter password"/>
+      <div className="space">
+        <label className="lableText">Enter your Password :</label>
+        <input type="password" placeholder="Enter password" className="inputbox"/>
       </div>
-      <button>Login</button>
+      <button className="button">Login</button>
     </div>
   )
 }

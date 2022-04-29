@@ -2,6 +2,8 @@ import React from "react";
 
 import LoginForm from "./components/login";
 
+import "./css/style.css";
+
 const App = () => {
   return (
     <div>
