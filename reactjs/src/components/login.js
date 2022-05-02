@@ -6,15 +6,19 @@ const LoginForm = () => {
     alert("Hello...");
   }
 
+  const onHandleInput = (event) => {
+    console.log(event)
+  }
+
   return(
     <div>
       <div className="space">
         <label className="lableText">Enter your username :</label>
-        <input type="text" placeholder="Enter username" className="inputbox" />
+        <input type="text" placeholder="Enter username" className="inputbox" onChange={onHandleInput} />
       </div>
       <div className="space">
         <label className="lableText">Enter your Password :</label>
-        <input type="password" placeholder="Enter password" className="inputbox"/>
+        <input type="password" placeholder="Enter password" className="inputbox" onChange={onHandleInput}/>
       </div>
       <button className="button" onClick={() => onLogin()}>Login</button>
     </div>
