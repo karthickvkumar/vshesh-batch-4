@@ -1,6 +1,11 @@
 import React from "react";
 
 const LoginForm = () => {
+
+  const onLogin = () => {
+    alert("Hello...");
+  }
+
   return(
     <div>
       <div className="space">
@@ -11,9 +16,19 @@ const LoginForm = () => {
         <label className="lableText">Enter your Password :</label>
         <input type="password" placeholder="Enter password" className="inputbox"/>
       </div>
-      <button className="button">Login</button>
+      <button className="button" onClick={() => onLogin()}>Login</button>
     </div>
   )
 }
+
+// import React from "react";
+
+// const ComponentName = () => {
+//   return (
+//     // HTML
+//   )
+// }
+
+// export default ComponentName;
 
 export default LoginForm;
