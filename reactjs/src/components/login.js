@@ -7,18 +7,18 @@ const LoginForm = () => {
   }
 
   const onHandleInput = (event) => {
-    console.log(event)
+    console.log(event.target.value, event.target.name);
   }
 
   return(
     <div>
       <div className="space">
         <label className="lableText">Enter your username :</label>
-        <input type="text" placeholder="Enter username" className="inputbox" onChange={onHandleInput} />
+        <input type="text" placeholder="Enter username" className="inputbox" onChange={onHandleInput} name="username" />
       </div>
       <div className="space">
         <label className="lableText">Enter your Password :</label>
-        <input type="password" placeholder="Enter password" className="inputbox" onChange={onHandleInput}/>
+        <input type="password" placeholder="Enter password" className="inputbox" onChange={onHandleInput} name="password"/>
       </div>
       <button className="button" onClick={() => onLogin()}>Login</button>
     </div>
