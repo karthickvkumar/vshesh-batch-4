@@ -1,13 +1,19 @@
-import React from "react";
+import React, {useState} from "react";
 
 const LoginForm = () => {
 
+  const [loginForm, setLoginForm] = useState({
+    username : "", password : ""
+  });
+
   const onLogin = () => {
-    alert("Hello...");
+    // alert("Hello...");
+    console.log(loginForm)
   }
 
   const onHandleInput = (event) => {
-    console.log(event.target.value, event.target.name);
+    // console.log(event.target.value, event.target.name);
+    setLoginForm({...loginForm, [event.target.name] : event.target.value});
   }
 
   return(
