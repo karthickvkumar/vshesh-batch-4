@@ -8,6 +8,8 @@ const LoginForm = () => {
 
   const [inlineCondition, setInlineCondition] = useState(true);
 
+  const [invisblePassword, setInvisiblePassword] = useState(true);
+
   const onLogin = () => {
     // alert("Hello...");
     console.log(loginForm)
@@ -26,6 +28,14 @@ const LoginForm = () => {
     setInlineCondition(false);
   }
 
+  const showPassword = () => {
+    setInvisiblePassword(false);
+  }
+  
+  const hidePassword = () => {
+    setInvisiblePassword(true);
+  }
+
   return(
     <div>
       <div className="space">
@@ -34,7 +44,14 @@ const LoginForm = () => {
       </div>
       <div className="space">
         <label className="lableText">Enter your Password :</label>
-        <input type="password" placeholder="Enter password" className="inputbox" onChange={onHandleInput} name="password"/>
+        <input type={invisblePassword ? "password" : "text"} placeholder="Enter password" className="inputbox" onChange={onHandleInput} name="password"/>
+        
+        {
+          invisblePassword ? <img src={require("../images/close-eye.png")} className="eye" onClick={() => showPassword()} /> : <img src={require("../images/open-eye.png")} className="eye" onClick={() => hidePassword()} />
+        }
+        
+        
+
       </div>
       <button className="button" onClick={() => onLogin()}>Login</button>
       <div>
