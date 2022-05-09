@@ -1,50 +1,71 @@
-import React from "react";
+import React, {useState} from "react";
 
 const RegisterPage = () => {
+
+  const [register, setRegister] = useState({
+    first_name : "",
+    last_name : "",
+    email_id : "",
+    password : "",
+    date_of_birth : "",
+    gender : "",
+    hobbies : "",
+    city : "",
+    address : ""
+  })
+
+  const onHandleInput = (event) => {
+    setRegister({...register, [event.target.name] : event.target.value });
+  }
+
+  const createAccount = () => {
+    console.log(register)
+  }
+
   return(
     <div>
        <div className="space">
         <label className="lableText">Enter First Name :</label>
-        <input type="text" placeholder="Enter first name" className="inputbox"/>
+        <input type="text" placeholder="Enter first name" className="inputbox" onChange={onHandleInput} name="first_name"/>
       </div>
       <div className="space">
         <label className="lableText">Enter Last Name :</label>
-        <input type="text" placeholder="Enter last name" className="inputbox"/>
+        <input type="text" placeholder="Enter last name" className="inputbox" onChange={onHandleInput} name="last_name"/>
       </div>
       <div className="space">
         <label className="lableText">Enter Email ID :</label>
-        <input type="text" placeholder="Enter email id" className="inputbox"/>
+        <input type="text" placeholder="Enter email id" className="inputbox" onChange={onHandleInput} name="email_id"/>
       </div>
       <div className="space">
         <label className="lableText">Enter Password :</label>
-        <input type="text" placeholder="Enter password" className="inputbox"/>
+        <input type="password" placeholder="Enter password" className="inputbox" onChange={onHandleInput} name="password"/>
       </div>
       <div className="space">
         <label className="lableText">Select your DOB :</label>
-        <input type="date" className="inputbox"/>
+        <input type="date" className="inputbox" onChange={onHandleInput} name="date_of_birth"/>
       </div>
       <div className="space">
         <label className="lableText">Select your Gender :</label>
-        <input type="radio"/> Male
-        <input type="radio"/> Female
-        <input type="radio"/> Others
+        <input type="radio" onChange={onHandleInput} name="gender" value="male"/> Male
+        <input type="radio" onChange={onHandleInput} name="gender" value="female"/> Female
+        <input type="radio" onChange={onHandleInput} name="gender" value="others"/> Others
       </div>
       <div className="space">
         <label className="lableText">Select your Hobbies :</label>
-        <input type="checkbox"/> Cricket
-        <input type="checkbox"/> Football
-        <input type="checkbox"/> Hockey
-        <input type="checkbox"/> Baseball
-        <input type="checkbox"/> Chess
-        <input type="checkbox"/> Caramboard
+        <input type="checkbox" onChange={onHandleInput} name="hobbies" value="Cricket"/> Cricket
+        <input type="checkbox" onChange={onHandleInput} name="hobbies" value="Football"/> Football
+        <input type="checkbox" onChange={onHandleInput} name="hobbies" value="Hockey"/> Hockey
+        <input type="checkbox" onChange={onHandleInput} name="hobbies" value="Baseball"/> Baseball
+        <input type="checkbox" onChange={onHandleInput} name="hobbies" value="Chess"/> Chess
+        <input type="checkbox" onChange={onHandleInput} name="hobbies" value="Caramboard"/> Caramboard
       </div>
       <div className="space">
         <label className="lableText">Enter address :</label>
-        <textarea placeholder="Enter address" className="inputbox"></textarea>
+        <textarea placeholder="Enter address" className="inputbox" onChange={onHandleInput} name="address"></textarea>
       </div>
       <div className="space">
         <label className="lableText">Select City :</label>
-        <select className="inputbox">
+        <select className="inputbox" onChange={onHandleInput} name="city">
           <option>Please select any once city</option>
           <option>Chennai</option>
           <option>Mumbai</option>
@@ -52,7 +73,7 @@ const RegisterPage = () => {
           <option>Delhi</option>
         </select>
       </div>
-      <button className="button">Create a Account</button>
+      <button className="button" onClick={() => createAccount()}>Create a Account</button>
     </div>
   )
 }
