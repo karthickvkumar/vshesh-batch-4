@@ -15,6 +15,7 @@ const RegisterPage = () => {
   })
 
   const onHandleInput = (event) => {
+    // console.log(event.target.value)
     setRegister({...register, [event.target.name] : event.target.value });
   }
 

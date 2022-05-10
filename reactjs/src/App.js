@@ -1,4 +1,5 @@
 import React from "react";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import LoginForm from "./components/login";
 import RegisterPage from "./components/register";
@@ -7,11 +8,12 @@ import "./css/style.css";
 
 const App = () => {
   return (
-    <div>
-      <h1>Hello, This is a App.js file</h1>
-      {/* <LoginForm></LoginForm> */}
-      <RegisterPage></RegisterPage>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="login" element={<LoginForm></LoginForm>}></Route>
+        <Route path="register" element={<RegisterPage></RegisterPage>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
