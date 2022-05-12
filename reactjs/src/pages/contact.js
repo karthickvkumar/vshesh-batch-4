@@ -25,6 +25,29 @@ const ContactPage = () => {
       })
   }
 
+  const UpdatingForm = () => {
+    var url = "https://reqres.in/api/users/2";
+    axios.put(url, form)
+      .then((response) => {
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }
+
+  const deleteMethod = () => {
+    var url = "https://reqres.in/api/users/2";
+
+    axios.delete(url)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+  }
+
   return(
     <div>
       <h1>This is a Contact Page</h1>
@@ -40,6 +63,8 @@ const ContactPage = () => {
         <input type="text" placeholder="Enter your Job" className="inputbox" onChange={onHandleInput} name="job"/>
       </div>
       <button onClick={() => formSubmit()}>Submit Form</button>
+      <button onClick={() => UpdatingForm()}>Updating Submit Form</button>
+      <button onClick={() => deleteMethod()}>Delete Request</button>
     </div>
   )
 }
